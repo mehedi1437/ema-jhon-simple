@@ -1,6 +1,7 @@
 import React from "react";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 
+
 const Product = ({ product, handleAddTOCart }) => {
   const { quantity, name, img, price, seller, ratings } = product;
 
@@ -15,6 +16,7 @@ const Product = ({ product, handleAddTOCart }) => {
           <p>Seller : {seller}</p>
           <p>Price : $ {price}</p>
           <p>Rating : {ratings}</p>
+          
         </div>
         <button
           onClick={() => handleAddTOCart(product)}
